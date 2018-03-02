@@ -9,7 +9,7 @@ package suu.assignment;
  *
  * @author Marc
  */
-public class MotorizedVehicle extends Vehicle {
+public abstract class MotorizedVehicle extends Vehicle {
 
     protected String motorBrand;
     protected int PS;
@@ -23,9 +23,8 @@ public class MotorizedVehicle extends Vehicle {
 
     @Override
     public String toString() {
-        String motorizedVehicle = "Brand: " + this.brand + " Type: " + this.type + " Construction Year: " + this.yearOfConstruction + " Price: " + this.price
-                + "MotorBrand: " + this.motorBrand + "PS: " + this.PS + "\n";
-        return motorizedVehicle;
+       String tmp = super.toString() + "Motorbrand: " + this.motorBrand +" PS: " + this.PS;
+        return tmp;
     }
 
     public String getMotorBrand() {

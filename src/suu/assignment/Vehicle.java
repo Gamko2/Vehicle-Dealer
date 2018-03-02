@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author Marc
  */
-public class Vehicle {
+public abstract class Vehicle {
 
     private static int ID;
     protected int price;
@@ -30,8 +30,8 @@ public class Vehicle {
  
 
     public String toString() {
-        String vehicle = "ID" + this.ID + "Brand: " + this.brand + " Type: " + this.type + " Construction Year: " + this.yearOfConstruction + " Price: " + this.price + "\n";
-        return vehicle;
+        return  "ID" + this.ID + "Brand: " + this.brand + " Type: " + this.type + " Construction Year: " + this.yearOfConstruction + " Price: " + this.price ;
+        
     }
 
     public void setBrand(String brand) {
